@@ -90,10 +90,16 @@ else:
     for i in ID_karyawan:
         print(ID_karyawan[i],'\t',nama_karyawan[i],'\t',role[i])
     print('\n')
-    print('Menghapus data karyawan')
-    ID_karyawan.pop(8)
-    nama_karyawan.pop(8)
-    role.pop(8)
-    print('NIK Karyawan','\tNama Karyawan','\tPosition')
-    for i in ID_karyawan:
-        print(ID_karyawan[i],'\t',nama_karyawan[i],'\t',role[i])
+    s = input('Apakah ada data yang ingin dihapus? ')
+    if s=='No' :
+        print('NIK Karyawan','\tNama Karyawan','\tPosition')
+        for i in ID_karyawan:
+            print(ID_karyawan[i],'\t',nama_karyawan[i],'\t',role[i]) 
+    else :
+        print('Menghapus data karyawan')
+        ID_karyawan.pop(8)
+        nama_karyawan.pop(8)
+        role.pop(8)
+        print('NIK Karyawan','\tNama Karyawan','\tPosition')
+        for i in ID_karyawan:
+            print(ID_karyawan[i],'\t',nama_karyawan[i],'\t',role[i])
